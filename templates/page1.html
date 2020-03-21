@@ -36,7 +36,7 @@ https://templatemo.com/tm-505-stacked
               <a href="#1" class="nav__link c-blue"><img src="../static/stacked_static/img/eye.png" alt=""></a>
             </li>
             <li class="nav__item">
-              <a href="#3" class="nav__link c-red"><img src="../static/stacked_static/img/language.png" alt=""></a>
+              <a href="{{ url_for('english_to_hindi') }}" class="nav__link c-red"><img src="../static/stacked_static/img/language.png" alt=""></a>
             </li>
             <li class="nav__item">
               <a href="{{ url_for('text_to_speech') }}" class="nav__link c-green"><img src="../static/stacked_static/img/speak.png" alt=""></a>
@@ -93,12 +93,12 @@ https://templatemo.com/tm-505-stacked
                       <div class="row">
                         <div class="col-md-8">
                           <div class="contat-form">
-                            <form id="contact" action="{{ url_for('report_page_2') }}" method="get">
+                            <form id="contact" action="{{ url_for('report_page_2') }}" method="post">
                               <fieldset>
                                 <input name="name" type="text" class="form-control" id="name" placeholder="detail 1" required="">
                               </fieldset>
                              <fieldset>
-                                <select name="language" class="form-control" id="name" placeholder="Select language" required="">
+                                <select name="language" class="form-control" id="language" placeholder="Select language" required="">
                                   <option value="en-us">English</option>
                                   <option value="hi">Hindi</option>
                                   <option value="bn">Bengali</option>
@@ -137,10 +137,6 @@ https://templatemo.com/tm-505-stacked
           </article>
         </section>
 
-
-
-
-      
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../static/stacked_static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
