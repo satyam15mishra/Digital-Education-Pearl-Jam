@@ -2,11 +2,12 @@
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request, redirect
 from text_speech import mytts
 from my_trans import converthindi
 from prachi_scrap import prachi_tare # this gives link for iframe
 from scrap import star #this gives summary
+
 
 app = Flask(__name__)
 
@@ -22,14 +23,15 @@ def report():
 	global link_1
 	topic_name = request.form['topic_name']
 	topic_summary = star(topic_name)
-	link_1 = prachi_tare(topic_name)
-	language_convert = converthindi(topic_name)
+	link_1 = str(prachi_tare(topic_name))
+	#link_1 = "'" + link_1 + "'"
+	language_convert = converthindi(topic_summary.decode('utf-8'))
 	return render_template('page1.html')
 
 @app.route('/report_page_2', methods = ['GET', 'POST'])
 def report_page_2():
 	language = request.form['language']
-	mytts(topic_name, language)
+	mytts(topic_summary, language)
 	return render_template('done.html', language = language, topic_name = topic_name, topic_summary = topic_summary, 
 		link_1 = link_1)
 
