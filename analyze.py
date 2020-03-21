@@ -48,8 +48,24 @@ plt.xticks(rotation=90)
 
 #plt.show()   
 
+# Lets look at relation with family members
+relation = data.ParentAnsweringSurvey.unique()
+relation_grade_ave = [sum(data[data.ParentAnsweringSurvey == i].numeric_class)/float(len(data[data.ParentAnsweringSurvey == i])) for i in relation]
+#ax = sns.barplot(x=relation, y=relation_grade_ave)
+#plt.title('Parents Feedback after the Complete Session')
+
+labels = 'Mother', 'Father'
+sizes = [40, 20,]
+colors = [ 'lightskyblue', 'lightcoral']
+explode = (0, 0.1)
+plt.pie(sizes, explode=explode, labels=relation, colors=colors,
+        autopct='%1.1f%%', shadow=True, startangle=90)
+#plt.axis('relation')
+plt.title('relation_grade_ave')
+#plt.show()
 
      
+
 
 
 
