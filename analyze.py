@@ -46,4 +46,10 @@ jordan_ave = sum(data[data.NationalITy == 'Jordan'].numeric_class)/float(len(dat
 print('Jordan average: '+str(jordan_ave))
 plt.xticks(rotation=90)
 
-#plt.show()     figure_2
+#plt.show()   
+
+
+     
+
+
+
