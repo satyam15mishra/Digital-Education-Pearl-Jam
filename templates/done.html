@@ -1,9 +1,10 @@
 <h1>DONE!</h1>
 
 <audio controls>
-    <source src="{{ url_for('static', filename = 'lala.mp3') }}" type="file/mpeg">
+    <source src="{{ url_for('static', filename = 'i.mp3') }}" type="audio/x-wav;codec=pcm">
 </audio>
 
 <p> {{topic_summary}} </p>
+{{link_1}}
 
-<iframe src = "{{ url_for(link_1) }}"  ></iframe>
+<iframe src = "{{ link_1 }}" width = "853" height="450" allowfullscreen>This is the youtube video</iframe>
