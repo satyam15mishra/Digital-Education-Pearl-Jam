@@ -14,7 +14,8 @@ def prachi_tare(query = 'sun'):
 	for a in soup.find_all('a', href=True):
 		if '/watch?' in a['href']:
 			final_link = a['href']
+			final_link = final_link.replace('watch?v=', 'embed/')
 			break
 
-	iframe_link = 'https://www.youtube.com'+final_link
-	print iframe_link
+	iframe_link = 'http://www.youtube.com'+final_link
+	return str(iframe_link)
