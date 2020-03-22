@@ -1,7 +1,7 @@
 # Digital-Education-Pearl-Jam
 HackNITR
 
-Pearl Jam is a One Stop Digital Education Tool for Everyone developed by us during HackNITR
+Pearl Jam is a One Stop Digital Education Tool for Everyone developed during HackNITR
 --------------------------------------------------------------------------------------------------------------------------
 CHALLENGES ADDRESSED
 --------------------------------------------------------------------------------------------------------------------------
@@ -44,5 +44,3 @@ we can smoothly add feature of local language transliteration too.
 
 Moreover, this has a potential to help millions of people as it addresses India-specific challenges. It is helpful to 
 you (if you're preparing for last-minute exams :p) or physically and economically priveledged people.
-
-----------------------------------------------------------------------------------------------------------------------------
