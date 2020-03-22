@@ -33,7 +33,7 @@ https://templatemo.com/tm-505-stacked
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#1" class="nav__link c-blue"><img src="../static/stacked_static/img/eye.png" alt=""></a>
+              <a href="{{url_for('index')}}" class="nav__link c-blue"><img src="../static/stacked_static/img/eye.png" alt=""></a>
             </li>
             <li class="nav__item">
               <a href="{{ url_for('english_to_hindi') }}" class="nav__link c-red"><img src="../static/stacked_static/img/language.png" alt=""></a>
@@ -60,15 +60,10 @@ https://templatemo.com/tm-505-stacked
                           <div class="home-box-content">
                             <div class="left-text">
                               <h4>{{ topic_name }}</h4>
-                              <p>Baaa dummmm tssssss!!! Here's the template for PEARL JAM ! Why this name?? Because previous
-                              project was NAPALM DEATH (a metal band :P). Pearl Jam's song LAST KISS is my favorite song, so that's why.</p>
-                              <div class="primary-button">
-                                <a href="#2">ANALYSE NOW !</a>
-                              </div>
-                            </div>
-                            <div class="right-image">
-                              <img src="../static/stacked_static/img/right-home-image.png" alt="">
-                            </div>
+                              <p><p> {{topic_summary}} </p>
+    <iframe src = "{{ link_1 }}" width = "400" height="200" allowfullscreen>This is the youtube video</iframe>
+    </p>
+                          
                           </div>
                         </div>
                       </div>
@@ -88,15 +83,13 @@ https://templatemo.com/tm-505-stacked
                   <div class="col-md-8 col-md-offset-2">
                     <div class="contact-content">
                       <div class="heading">
-                        <h4>TAKE INPUT DATA HERE</h4>
+                        <h4>CHOOSE LANGUAGE FOR CONVERSION!</h4>
                       </div>
                       <div class="row">
                         <div class="col-md-8">
                           <div class="contat-form">
-                            <form id="contact" action="{{ url_for('report_page_2') }}" method="post">
-                              <fieldset>
-                                <input name="name" type="text" class="form-control" id="name" placeholder="detail 1" required="">
-                              </fieldset>
+                            <form id="contact" action="{{ url_for('english_to_hindi') }}" method="post">
+                              
                              <fieldset>
                                 <select name="language" class="form-control" id="language" placeholder="Select language" required="">
                                   <option value="en-us">English</option>
@@ -106,36 +99,31 @@ https://templatemo.com/tm-505-stacked
                                 </select>
                               </fieldset>
 
+                              
                               <fieldset>
-                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="detail 3" required=""></textarea>
-                              </fieldset>
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                <button type="submit" id="form-submit" class="btn">Convert</button>
                               </fieldset>
                             </form>
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <div class="more-info">
-                            <p>Nunc purus ligula, ullamcorper id velit id, vestibulum auc sapien. Sed quis mauris eget sem imperdiet rhoncus.<br><br>
-                            <em>880 Etiam mauris erat,
-								<br>Vestibulum eu augue nec, 10940</em></p>
-                          </div>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-12">
-                    <div class="footer">
-                      <p>Copyright &copy; 2020 Your Company 
-                      | Design: TemplateMo</p>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
           </article>
         </section>
+
+
+
+
       
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../static/stacked_static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
