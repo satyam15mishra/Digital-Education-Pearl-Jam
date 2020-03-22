@@ -33,13 +33,13 @@ https://templatemo.com/tm-505-stacked
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#1" class="nav__link c-blue"><img src="../static/stacked_static/img/eye.png" alt=""></a>
+              <a href="{{url_for('index')}}" class="nav__link c-blue"><img src="../static/stacked_static/img/eye.png" alt=""></a>
             </li>
             <li class="nav__item">
-              <a href="#3" class="nav__link c-red"><img src="../static/stacked_static/img/language.png" alt=""></a>
+              <a href="{{url_for('english_to_hindi')}}" class="nav__link c-red"><img src="../static/stacked_static/img/language.png" alt=""></a>
             </li>
             <li class="nav__item">
-              <a href="#4" class="nav__link c-green"><img src="../static/stacked_static/img/speak.png" alt=""></a>
+              <a href="{{url_for('text_to_speech')}}" class="nav__link c-green"><img src="../static/stacked_static/img/speak.png" alt=""></a>
             </li>
           </ul>
         </nav>
@@ -60,105 +60,14 @@ https://templatemo.com/tm-505-stacked
                           <div class="home-box-content">
                             <div class="left-text">
                               <h4>{{ topic_name }}</h4>
-                              <p>Baaa dummmm tssssss!!! Here's the template for PEARL JAM ! Why this name?? Because previous
-                              project was NAPALM DEATH (a metal band :P). Pearl Jam's song LAST KISS is my favorite song, so that's why.</p>
-                              <div class="primary-button">
-                                <a href="#2">ANALYSE NOW !</a>
-                              </div>
-                            </div>
-                            <div class="right-image">
-                              <img src="../static/stacked_static/img/right-home-image.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </section>
-        <section class="panel b-yellow" id="2">
-          <article class="panel__wrapper">
-            <div class="panel__content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="about-content">
-                      <div class="heading">
-                        <h4>RESULTS</h4>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="about-box-content">
-                            <img src="../static/stacked_static/img/about-image.png" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-7 col-md-offset-5">
-                          <div class="about-box-text">
-                            <h4>CRUX OF ANALYSIS REPORT</h4>
-                            <p>Here's the predicition according to the deep learning model regarding the
-                            	disease and other shit.<strong>ENJOY !</strong>.</p>
-                            <div class="primary-button">
-                              <a href="#3">See the reports</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </section>
-        <section class="panel b-green" id="4">
-          <article class="panel__wrapper">
-            <div class="panel__content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="contact-content">
-                      <div class="heading">
-                        <h4>TAKE INPUT DATA HERE</h4>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-8">
-                          <div class="contat-form">
-                            <form id="contact" action="{{ url_for('report_page_2') }}" method="post">
-                              <fieldset>
-                                <select name="language" class="form-control" id="language" placeholder="Select language" required="">
-                                  <option value="en-us">English</option>
-                                  <option value="hi">Hindi</option>
-                                  <option value="bn">Bengali</option>
-                                  <option value="ta">Tamil</option>
-                                </select>
-                              </fieldset>
+                              <h4>CLICK ON THE PLAY BUTTON !</h4>
+                              <audio controls>
+    <source src="{{ url_for('static', filename = 'hacknitr.mp3') }}" type="audio/x-wav;codec=pcm">
+</audio>
                               
-                              <fieldset>
-                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="detail 3" required=""></textarea>
-                              </fieldset>
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="btn">Send Message</button>
-                              </fieldset>
-                            </form>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="more-info">
-                            <p>Nunc purus ligula, ullamcorper id velit id, vestibulum auc sapien. Sed quis mauris eget sem imperdiet rhoncus.<br><br>
-                            <em>880 Etiam mauris erat,
-								<br>Vestibulum eu augue nec, 10940</em></p>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="footer">
-                      <p>Copyright &copy; 2020 Your Company 
-                      | Design: TemplateMo</p>
                     </div>
                   </div>
                 </div>
@@ -166,8 +75,7 @@ https://templatemo.com/tm-505-stacked
             </div>
           </article>
         </section>
-
-
+ 
 
 
       
