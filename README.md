@@ -4,7 +4,7 @@ HackNITR
 Pearl Jam is a One Stop Digital Education Tool for Everyone developed by us during HackNITR
 --------------------------------------------------------------------------------------------------------------------------
 CHALLENGES ADDRESSED
-
+--------------------------------------------------------------------------------------------------------------------------
 There are plenty of tools available online which are solely based on video lectures and tests.
 
 1) Problem is they are very LONG. You can't take the crux out of them in seconds. You've to watch the videos as well as
@@ -19,17 +19,17 @@ needs flask integration which can be done in a day.
 
 As of now, this project is very functional. It has the potential to be scaled up which can help millions of underpriveleged
 people.
+
 ---------------------------------------------------------------------------------------------------------------------------
-
 TECHNOLOGIES USED
-
- Python Backend
- Flask
- gTTS
- indic_transliteration
- Python essentials
- JQuery
- Frontend Essentials
+--------------------------------------------------------------------------------------------------------------------------
+1. Python Backend
+2. Flask
+3. gTTS
+4. indic_transliteration
+5. Python essentials
+6. JQuery
+7. Frontend Essentials
 
 We used this tech stack because of time constraints and easy scalability. It is very well possible to integrate AngularJS/
 NodeJS
@@ -37,7 +37,7 @@ React Native to it. This will improve the scalability.
 
 -----------------------------------------------------------------------------------------------------------------------------
 SCALABILITY
-
+--------------------------------------------------------------------------------------------------------------------------
 This project is highly scalable. You can easily integrate regional language support in transliteration and text to speech
 scripts (like Kannada, Bengali, Tamil). We've addedd 4 regional languages in tts. If its was a little bit longer hack,
 we can smoothly add feature of local language transliteration too.
