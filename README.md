@@ -37,10 +37,18 @@ React Native to it. This will improve the scalability.
 
 -----------------------------------------------------------------------------------------------------------------------------
 SCALABILITY
---------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 This project is highly scalable. You can easily integrate regional language support in transliteration and text to speech
 scripts (like Kannada, Bengali, Tamil). We've addedd 4 regional languages in tts. If its was a little bit longer hack,
 we can smoothly add feature of local language transliteration too.
 
 Moreover, this has a potential to help millions of people as it addresses India-specific challenges. It is helpful to 
 you (if you're preparing for last-minute exams :p) or physically and economically priveledged people.
+
+-----------------------------------------------------------------------------------------------------------------------------
+Scope of Improvement
+-----------------------------------------------------------------------------------------------------------------------------
+1. Error Handling - you can't get summary for gibberish words. It needs to be addressed.
+2. Improving Frontend - Frontend can be optimized (things like fonts and titles).
+3. It can be made for heavy use by switching over to Django.
+4. Regional Language Support can be easily added in the code.
