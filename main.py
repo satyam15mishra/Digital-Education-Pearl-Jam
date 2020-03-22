@@ -26,7 +26,7 @@ def report():
 	link_1 = str(prachi_tare(topic_name))
 	#link_1 = "'" + link_1 + "'"
 	language_convert = converthindi(topic_summary.decode('utf-8'))
-	return render_template('page1.html')
+	return render_template('page1.html', topic_summary = topic_summary, topic_name = topic_name, link_1 = link_1)
 
 @app.route('/report_page_2', methods = ['GET', 'POST'])
 def report_page_2():
@@ -41,7 +41,9 @@ def text_to_speech():
 
 @app.route('/english_to_hindi', methods = ['GET', 'POST'])
 def english_to_hindi():
-	return render_template('english_to_hindi.html', language_convert = language_convert)
+	language = 'hi'
+	mytts(topic_summary, language)
+	return render_template('english_to_hindi.html', language_convert = language_convert, language = language)
 
 if __name__ == '__main__':
     app.run(debug = True)
